@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.banner{
+	height: 300px;
+	width: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #A52A2A;
+	margin-bottom: 20px;
+}
+.constant-width-to-height-ratio {
+	background-color: #008000;
+	width: 29%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.constant-width-to-height-ratio::before {
+	content: "";
+	padding-top: 100%;
+	float: left;
+}
+
+.constant-width-to-height-ratio::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 弹性盒子 */
+.evenly-distributed-children {
+	width: 400px;
+	display: flex;
+	text-align: center;
+	line-height: 43px;
+	/*弹性盒子的属性： 水平均匀分布子元素，第一个项目位于左边缘，最后一个项目位于右边缘 */
+	/* justify-content: space-between; */
+	/* 项目两侧的间隔相等 */
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.evenly-distributed-children a {
+	margin-top: 20px;
+	background-color: brown;
+	height: 50px;
+	width: 100px;
+/* 	margin: 0 auto; */
+}
+.flexbox-centering{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 200px;
+	border: 2px solid #2B72FF;
+}
