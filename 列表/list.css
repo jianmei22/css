@@ -1,0 +1,237 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+}
+
+.col1 {
+	margin: 20px 5px;
+	padding: 0;
+	width: 590px;
+	list-style: none;
+	font-family: "agency fb";
+	font-size: 16px;
+	line-height: 1.8em;
+}
+
+.col1 li {
+	padding-left: 260px;
+	background: url(../image/tick.png) no-repeat left;
+}
+
+.col1 li b {
+	font-weight: normal;
+}
+
+/* 利用伪类添加分隔符 */
+.col1 li b::after {
+	content: "|";
+	color: #333333;
+	margin: 0 5px;
+	line-height: 24px;
+}
+
+.col1 li a {
+	color: gray;
+	text-decoration: none;
+}
+
+.col1 li a:hover {
+	color: red;
+}
+
+.container {
+	width: 200px;
+	height: 100px;
+}
+
+.clearfix::after {
+	content: "";
+	/* 默认伪类的内容为行内元素，所以要利用display转换成块级元素 */
+	display: block;
+	clear: both;
+}
+
+.left {
+	width: 100px;
+	height: 100px;
+	background-color: #14464A;
+	float: left;
+}
+
+.right {
+	width: 100px;
+	height: 100px;
+	background-color: #A52A2A;
+	float: left;
+}
+
+.bottom {
+	width: 200px;
+	height: 100px;
+	background-color: #8FE083;
+	font-family: "agency fb";
+	font-size: 16px;
+	/* 利用弹性盒子实现内容垂直居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom b {
+	font-weight: normal;
+}
+
+.bottom b::after {
+	content: "|";
+	/*  */
+	margin: 0 5px;
+}
+
+.bottom a {
+	text-decoration: none;
+	color: brown;
+}
+
+.bottom a:hover {
+	color: #1D8FEE;
+}
+
+.col2 {
+	width: 640px;
+	margin: 20px 0;
+}
+.col2 nav {
+	height: 35px;
+	background-color: brown;
+	font-size: 14px;
+	/* 将导航栏转换成弹性盒子 */
+	display: flex;
+	/* 横轴居中 */
+	justify-content: center;
+	/* 纵轴居中 */
+	align-items: center;
+}
+.col2 nav b{
+	/* b标签的文字转换成正常状态 */
+	font-weight: normal;
+}
+.col2 nav b:after{
+	/* 向导航栏内加入分隔符号 */
+	content: "|";
+	margin: 0 10px;
+	color: #fff;
+}
+.col2 nav a {
+	text-decoration: none;
+	margin: 0 10px;
+	color: #fff;
+}
+.col2 nav a:hover{
+	color: seagreen;
+}
+.col2 .list-out-li{
+	margin: 5px 0;
+	border: 2px solid salmon;
+	list-style: none;
+}
+.col2 .list-out-li h4{
+	padding: 0;
+	display: block;
+	margin:0 0 0 200px;
+}
+/* .clearfix{
+	content: "";
+	display: block;
+	clear: both;
+} */
+.col2 .list-out-li img{
+	float: left;
+}
+.col2 .list-in{
+	width: 200px;
+	list-style: none;
+	float: left;
+	font-size: 13px;
+	margin: 10px 0;
+}
+.col2 .list-in li{
+	width: 100px;
+	float: left;
+}
+.product-list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 14px;
+	border: 2px solid seagreen;
+	width: 220px;
+	margin: 10px;
+}
+.product-list li{
+	
+}
+.product-list li h3{
+	color: red;
+	font-size: 25px;
+	margin: 0;
+	padding: 0;
+}
+.product-list li h3::before{
+	content: "￥";
+	font-size: 14px;
+}
+.product-list li p{
+	height: 16px;
+	overflow: hidden;
+	line-height: 16px;
+}
+.product-list li .product-title a{
+	color: darkgrey;
+	text-decoration: none;
+}
+.product-list li .product-title a:hover{
+	color: brown;
+	text-decoration: underline;
+}
+.product-list li .product-vender a{
+	color: sgray;
+}
+.product-list li .product-vender a:hover{
+	color: brown;
+	text-decoration: underline;
+}
+.product-list li .product-imgbox img{
+	font-family: "arial rounded mt bold";
+	width:200px;
+	height: 200px;
+}
+.product-list .product-info{
+	border-top:1px solid #eee;
+}
+.product-list .product-info b{
+	color: salmon;
+	font-weight: normal;
+}
+.product-list .product-info i{
+	font-style: normal;
+}
+.product-list .product-info span{
+	border-right: 1px solid #eee;
+	float: left;
+	width: 96px;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 10px;
+}
+.product-list .product-info a img{
+	/*图片设置只限制宽，不限制高时，会等比例缩放  */
+	width: 20px;
+	padding-top: 5px;
+	margin-left: -35px;
+}
+.one{
+	float: left;
+}
+.two{
+	float: left;
+}
