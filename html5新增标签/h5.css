@@ -1,0 +1,27 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+pre{
+	padding: 0;
+	margin: 0;
+	height: 20px;
+}
+figure{
+	padding: 0;
+	margin: 0;
+}
+mark{
+	margin: 0;
+	padding: 0;
+	background-color: #2E8B57;
+	font-size: 26px;
+	color: #EEEEEE;
+}
+p{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+progress{
+}

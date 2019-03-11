@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./h5.css" type="text/css">
+	</head>
+	<body>
+		<pre>&lt;div class="class"&gt;jianmei&lt;/div&gt;
+		</pre>
+		<figure>用于独立的流内容</figure>
+		<p>这是一个mark标签用于定义带有记号的文本<mark>标记文本</mark></p>
+		meter标签：<meter min="0" max="20" value=5></meter>
+		下载进度：<progress value="25" max="100"></progress>
+		<!-- 如果不指定一个value值，则显示一个动态的进度条 -->
+		<!-- 处理中请稍候：<progress></progress> -->
+		<menu type="context" id="mymenu">
+			<menuitem label="刷新" onclick="window.location.reload();">
+			</menuitem>
+			<menu label="演示子菜单">
+				<menuitem label="子菜单1" onclick="alert('子菜单1');">
+				</menuitem>
+				<menuitem label="子菜单2" onclick="alert('子菜单2');">
+				</menuitem>
+			</menu>
+		</menu>
+		<img src="img/logo.jpeg" draggable="true" contextmenu="mymenu"/>
+	</body>
+</html>
