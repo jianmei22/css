@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="#" method="get" name="">
+			<!-- 点击文本时不显示value值 -->
+			<p>账号：<input type="text" value="123" onclick="this.value=''"></p>
+			<p>密码：<input type="password" /></p>
+			<p>隐藏域：<input type="hidden" /></p>
+			<textarea name="" id="" cols="30" rows="10">
+			</textarea>
+			<!-- 输入框控件 -->
+			<p>网址：<input type="url" /></p>
+			<p>邮箱：<input type="email" /></p>
+			<!-- html5在浏览器的原生态展示 -->
+			<!-- 最大值与最小值 -->
+			<!-- 还可以有规律的间隔 -->
+			<p>数字：<input type="number" min="0" max="7" step="2" /></p>
+			<p>数字范围：<input type="range" /></p>
+			<p>时间选择器：<input type="date" /></p>
+			<p>色彩选取器：<input type="color" /></p>
+			<p>搜索：<input type="search" /></p>
+		</form>
+		<form action="" method="get" name="">
+			<!-- name要保持一致才可以实现2选1 -->
+			<p>性别：<input type="radio" name="sex" value="" checked="" />女<input type="radio" name="sex" value="" />男</p>
+			<p>爱好：<input type="checkbox" name="hobby" value="" />爱好1<input type="checkbox" name="hobby" value="" />爱好2
+				<input type="checkbox" name="hobby" value="" />爱好3</p>
+			<p>复选框：<input type="checkbox" />同意xx协议</p>
+			<p>下拉选择框：
+			<!-- optgroup:选择分组 -->
+			<!-- 每个option都要有value值 -->
+				<select name="select" id="" size="2">
+					<optgroup label="11">
+					<option value="select1">选择1</option>
+					<option>选择2</option>
+					</optgroup>
+					<optgroup label="22">
+					<option>选择fsdfds</option>
+					<option>选择afdf2</option>
+					</optgroup>
+					<optgroup label="33">
+					<option>选择1fadsafsd</option>
+					<option>选择2aas</option>
+					</optgroup>
+				</select>
+			</p>
+			<!-- 输入提示控件 -->
+			<!-- 无法更改样式、更改css -->
+			<!-- 部分浏览器不支持，且支持效果不一样 -->
+			你用的浏览器是：<input type="text" list="browser">
+			<datalist id="browser">
+				<option value="">ie</option>
+				<option value="">chorme</option>
+				<option value="">safari</option>
+				<option value="">opera</option>
+				<option value="">firefox</option>
+				<option value="">else</option>
+			</datalist>
+		</form>
+	</body>
+</html>
