@@ -1,0 +1,6 @@
+1、ecmascript是一种语言标准，第一版标准发布于1997年，javascript是网景公司对ecmascript标准的一种实现。
+2、js不区分整数和浮点数，统一用number表示，NaN表示 not a number,无法计算结果的时候用NaN表示。
+3、字符串string,是以单引号或者双引号括起来的任意文本，比如'abc',"abc".
+4、布尔值boolean,布尔值只有两种值，true或者false。
+5、&&与，||或，！非。
+6、

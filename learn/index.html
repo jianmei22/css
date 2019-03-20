@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>html+css</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<!-- 一个三角形箭头 -->
+		<div class="triangle"></div>
+		<!-- 一个>小箭头 -->
+		<div class="arrow"></div>
+		<!-- 单行文本溢出处理 -->
+		<div class="overtext">
+			单行文本溢出处理单行文本溢出处理
+		</div>
+		<!-- 网络响应较慢，图片加载不出来，网站仍能正常运作 -->
+		<a href="https://jianmei22.github.io/" class="text_hidden" target="_blank">logo</a>
+		<!-- pc端和移动端均水平垂直居中 -->
+		<div class="center">
+			水平垂直居中
+		</div>
+		<!-- 左中右三栏布局、左栏定宽100px、右栏定宽100px、中栏宽度不固定、三栏宽度加起来正好是100% -->
+		<!-- 第一种方法 -->
+		<div class="container clearfix">
+			<div class="left">
+				left
+			</div>
+			<div class="right">
+				right
+			</div>
+			<!-- 此方法要将middle内容放在最后边-->
+			<div class="middle">
+				middle
+			</div>
+		</div>
+		<!-- 第二种方法:flex布局 -->
+		<div class="container1">
+			<div class="left1">
+				left1
+			</div>
+			<div class="middle1">
+				middle1
+			</div>
+			<div class="right1">
+				right1
+			</div>
+		</div>
+		<div class="wrapper clearfix">
+			<img src="img/timg.jpg" alt=""  class="img">
+			<p class="content1">最多两行 20px，#333，顶部对齐图片，底部间距80px</p>
+			<p class="content2">12px #666 行高1.2 使用语义化的html标签完成以下布局，考虑模块化和扩展性，容器默认宽度是320px，左侧</p>
+		</div>
+	</body>
+</html>
